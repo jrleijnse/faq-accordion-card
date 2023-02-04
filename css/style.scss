@@ -3,14 +3,12 @@
 // Text
 $very-dark-desaturated-blue: hsl(238, 29%, 16%);
 $soft-red: hsl(14, 88%, 65%);
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
 
 // Background gradient:
 $soft-violet: hsl(273, 75%, 66%);
 $soft-blue: hsl(240, 73%, 65%);
-
-// Text
-$very-dark-grayish-blue: hsl(237, 12%, 33%);
-$dark-grayish-blue: hsl(240, 6%, 50%);
 
 // Dividers
 $light-grayish-blue: hsl(240, 5%, 91%);
@@ -23,12 +21,11 @@ $light-grayish-blue: hsl(240, 5%, 91%);
 }
 * {
   margin: 0;
+  padding: 0;
 }
-html,
+
 body {
   font-size: 0.75rem;
-}
-body {
   background: linear-gradient($soft-violet, $soft-blue);
   display: flex;
   flex-direction: column;
@@ -43,7 +40,6 @@ body {
 /* prettier-ignore */
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
 }
 
 /* prettier-ignore */
@@ -62,10 +58,91 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- CSS RESET ------------------ */
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.grid-container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 52rem;
+  border-radius: 1.5rem;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+.hero-container {
+  position: relative;
+  overflow: hidden;
+
+  .background-pattern-image {
+    position: absolute;
+    width: 53rem;
+    top: -57%;
+    left: -119%;
+  }
+
+  .hero-image {
+    top: 50%;
+    position: absolute;
+    width: 27rem;
+    transform: translate(-19%, -50%);
+  }
+
+  .orange-box-image {
+    width: 10rem;
+    top: 50%;
+    transform: translate(-49%, -40%);
+    position: fixed;
+  }
+}
+
+.accordion-container {
+  padding: 4.5rem 4.5rem 4.5rem 0rem;
+
+  .accordion-title {
+    line-height: 0;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+
+  .faq-list {
+    list-style: none;
+
+    .hidden-box {
+      display: none;
+    }
+  }
+}
+
+.question {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 1px solid $light-grayish-blue;
+  align-items: center;
+
+  .question-title {
+    color: $very-dark-grayish-blue;
+    padding: 0.8rem 0;
+  }
+
+  .question-text {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.attribution {
+  margin-top: 2rem;
+
+  p {
+    color: black;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
 }

@@ -7,14 +7,11 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
-html,
 body {
   font-size: 0.75rem;
-}
-
-body {
   background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
   display: flex;
   flex-direction: column;
@@ -29,7 +26,6 @@ body {
 /* prettier-ignore */
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
 }
 
 /* prettier-ignore */
@@ -48,11 +44,81 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* -------------------- CSS RESET ------------------ */
+.grid-container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 52rem;
+  border-radius: 1.5rem;
+}
+
+.hero-container {
+  position: relative;
+  overflow: hidden;
+}
+.hero-container .background-pattern-image {
+  position: absolute;
+  width: 53rem;
+  top: -57%;
+  left: -119%;
+}
+.hero-container .hero-image {
+  top: 50%;
+  position: absolute;
+  width: 27rem;
+  transform: translate(-19%, -50%);
+}
+.hero-container .orange-box-image {
+  width: 10rem;
+  top: 50%;
+  transform: translate(-49%, -40%);
+  position: fixed;
+}
+
+.accordion-container {
+  padding: 4.5rem 4.5rem 4.5rem 0rem;
+}
+.accordion-container .accordion-title {
+  line-height: 0;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.accordion-container .faq-list {
+  list-style: none;
+}
+.accordion-container .faq-list .hidden-box {
+  display: none;
+}
+
+.question {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+  align-items: center;
+}
+.question .question-title {
+  color: hsl(237deg, 12%, 33%);
+  padding: 0.8rem 0;
+}
+.question .question-text {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
 .attribution {
+  margin-top: 2rem;
+}
+.attribution p {
+  color: black;
   font-size: 11px;
   text-align: center;
 }
-
 .attribution a {
   color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=style.css.map */

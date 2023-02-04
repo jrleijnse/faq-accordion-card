@@ -21,16 +21,23 @@
   <body>
     <main>
       <div class="grid-container">
-        <img
-          class="hero-img"
-          alt="Women standing in front of big touch-screen monitor"
-          src="./images/illustration-woman-online-desktop.svg"
-        />
-        <img
-          class="orange-box-image"
-          alt="An orange box with a @ sign on it"
-          src="./images/illustration-box-desktop.svg"
-        />
+        <div class="hero-container">
+          <img
+            class="background-pattern-image"
+            alt="Background pattern"
+            src="./images/bg-pattern-desktop.svg"
+          />
+          <img
+            class="hero-image"
+            alt="Women standing in front of big touch-screen monitor"
+            src="./images/illustration-woman-online-desktop.svg"
+          />
+          <img
+            class="orange-box-image"
+            alt="An orange box with a @ sign on it"
+            src="./images/illustration-box-desktop.svg"
+          />
+        </div>
 
         <div class="accordion-container">
           <h1 class="accordion-title">faq</h1>
@@ -39,11 +46,13 @@
             <!-- Question 1 -->
             <li class="question">
               <p class="question-title">How many team members can I invite?</p>
-              <img
-                class="arrow-down-icon"
-                alt="Arrow down icon"
-                src="./images/icon-arrow-down.svg"
-              />
+              <button class="btn">
+                <img
+                  class="arrow-down-icon"
+                  alt="Arrow down icon"
+                  src="./images/icon-arrow-down.svg"
+                />
+              </button>
               <p class="hidden-box">
                 You can invite up to 2 additional users on the Free plan. There
                 is no limit on team members for the Premium plan.
@@ -60,7 +69,7 @@
                 alt="Arrow down icon"
                 src="./images/icon-arrow-down.svg"
               />
-              <p class="hidden-box">
+              <p class="question-text">
                 No more than 2GB. All files in your account must fit your
                 allotted storage space.
               </p>
@@ -113,10 +122,12 @@
     </main>
 
     <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
     </footer>
   </body>
 </html>
