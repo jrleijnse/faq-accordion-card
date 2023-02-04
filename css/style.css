@@ -58,9 +58,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .grid-container .orange-box-image {
   width: 11rem;
-  top: 41%;
+  top: 50%;
   left: -10.5%;
   position: absolute;
+  transform: translate(1%, -24.5%);
 }
 
 /* -------------------- IMAGE CONTAINER ------------------ */
@@ -113,6 +114,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .question .question-title:hover {
   cursor: pointer;
   color: hsl(14deg, 88%, 65%);
+  transition: all 0.2s;
 }
 .question .btn {
   border: none;
@@ -128,6 +130,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   max-height: 0;
   overflow: hidden;
+  transition: ease-in 0.2s;
 }
 
 /* -------------------- FOOTER ------------------ */
