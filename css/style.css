@@ -53,6 +53,7 @@ p, h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1fr 1fr;
   width: 52rem;
   border-radius: 1.5rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.5);
 }
 
 /* -------------------- IMAGE CONTAINER ------------------ */
@@ -129,7 +130,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- FOOTER ------------------ */
 .attribution {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .attribution p {
   color: hsl(240deg, 5%, 91%);
