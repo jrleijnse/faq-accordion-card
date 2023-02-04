@@ -64,20 +64,20 @@ p, h1, h2, h3, h4, h5, h6 {
 .hero-container .background-pattern-image {
   top: 50%;
   position: absolute;
-  width: 53rem;
+  width: 52.5rem;
   transform: translate(-59%, -58%);
 }
 .hero-container .hero-image {
   top: 50%;
   position: absolute;
-  width: 27rem;
-  transform: translate(-19%, -50%);
+  width: 26rem;
+  transform: translate(-17%, -50%);
 }
 .hero-container .orange-box-image {
   top: 50%;
   position: fixed;
-  width: 10rem;
-  transform: translate(-49%, -40%);
+  width: 11rem;
+  transform: translate(-49%, -43%);
 }
 
 /* -------------------- ACCORDION ------------------ */
