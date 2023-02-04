@@ -57,14 +57,13 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/* -------------------- CSS RESET ------------------ */
+/* -------------------- GRID CONTAINER ------------------ */
 
 .grid-container {
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 52rem;
-  height: 28rem;
   border-radius: 1.5rem;
 }
 
@@ -74,10 +73,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 
   .background-pattern-image {
-    position: absolute;
     width: 53rem;
     top: -57%;
     left: -120%;
+    position: absolute;
   }
 
   .hero-image {
@@ -98,77 +97,87 @@ p, h1, h2, h3, h4, h5, h6 {
 /* -------------------- ACCORDION ------------------ */
 .accordion-container {
   padding: 4.5rem 4.5rem 4.5rem 0rem;
+  transition: all 0.3s;
 
   .accordion-title {
     line-height: 0;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     font-weight: 700;
   }
 
   .faq-list {
-    transition: all 0.3s;
     list-style: none;
-
-    .hidden-box {
-      display: none;
-    }
-
-    // HELPER CLASSES
-    .active {
-      display: block;
-      margin-bottom: 0.8rem;
-    }
-
-    .bold {
-      font-weight: 700;
-      color: $very-dark-desaturated-blue;
-      padding-bottom: 0.4rem;
-    }
-
-    .rotate {
-      rotate: 180deg;
-    }
   }
 }
 
+// QUESTION
 .question {
   display: grid;
   grid-template-columns: 1fr auto;
   border-bottom: 1px solid $light-grayish-blue;
   color: $very-dark-grayish-blue;
   align-items: center;
+  cursor: pointer;
 
   .question-title {
-    width: fit-content;
     padding: 0.8rem 0;
+  }
+
+  .question-title:hover {
+    cursor: pointer;
+    color: $soft-red;
+  }
+
+  .btn {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  .arrow-down-icon {
+    transition: all 0.3s;
   }
 
   .question-text {
     margin-bottom: 0.5rem;
+    opacity: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
   }
 }
-.question-title:hover {
-  cursor: pointer;
-  color: $soft-red;
-}
 
-.btn {
-  border: none;
-  background-color: inherit;
-  cursor: pointer;
-}
-
+/* -------------------- FOOTER ------------------ */
 .attribution {
   margin-top: 2rem;
 
   p {
-    color: black;
+    color: $light-grayish-blue;
     font-size: 11px;
     text-align: center;
   }
 
   a {
-    color: hsl(228, 45%, 44%);
+    color: $soft-red;
   }
+}
+
+/* -------------------- HELPER CLASSES ------------------ */
+.active .question-text {
+  display: block;
+  opacity: 1;
+  height: fit-content;
+  margin-bottom: 0.8rem;
+  max-height: fit-content;
+}
+
+.active .question-title {
+  font-weight: 700;
+  color: $very-dark-desaturated-blue;
+  padding-bottom: 0.4rem;
+}
+
+.active .arrow-down-icon {
+  rotate: 180deg;
 }

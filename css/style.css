@@ -46,13 +46,12 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/* -------------------- CSS RESET ------------------ */
+/* -------------------- GRID CONTAINER ------------------ */
 .grid-container {
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 52rem;
-  height: 28rem;
   border-radius: 1.5rem;
 }
 
@@ -62,10 +61,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 .hero-container .background-pattern-image {
-  position: absolute;
   width: 53rem;
   top: -57%;
   left: -120%;
+  position: absolute;
 }
 .hero-container .hero-image {
   top: 50%;
@@ -83,31 +82,16 @@ p, h1, h2, h3, h4, h5, h6 {
 /* -------------------- ACCORDION ------------------ */
 .accordion-container {
   padding: 4.5rem 4.5rem 4.5rem 0rem;
+  transition: all 0.3s;
 }
 .accordion-container .accordion-title {
   line-height: 0;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   font-weight: 700;
 }
 .accordion-container .faq-list {
-  transition: all 0.3s;
   list-style: none;
-}
-.accordion-container .faq-list .hidden-box {
-  display: none;
-}
-.accordion-container .faq-list .active {
-  display: block;
-  margin-bottom: 0.8rem;
-}
-.accordion-container .faq-list .bold {
-  font-weight: 700;
-  color: hsl(238deg, 29%, 16%);
-  padding-bottom: 0.4rem;
-}
-.accordion-container .faq-list .rotate {
-  rotate: 180deg;
 }
 
 .question {
@@ -116,36 +100,63 @@ p, h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid hsl(240deg, 5%, 91%);
   color: hsl(237deg, 12%, 33%);
   align-items: center;
+  cursor: pointer;
 }
 .question .question-title {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   padding: 0.8rem 0;
 }
-.question .question-text {
-  margin-bottom: 0.5rem;
-}
-
-.question-title:hover {
+.question .question-title:hover {
   cursor: pointer;
   color: hsl(14deg, 88%, 65%);
 }
-
-.btn {
+.question .btn {
   border: none;
   background-color: inherit;
   cursor: pointer;
 }
+.question .arrow-down-icon {
+  transition: all 0.3s;
+}
+.question .question-text {
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+}
 
+/* -------------------- FOOTER ------------------ */
 .attribution {
   margin-top: 2rem;
 }
 .attribution p {
-  color: black;
+  color: hsl(240deg, 5%, 91%);
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(14deg, 88%, 65%);
+}
+
+/* -------------------- HELPER CLASSES ------------------ */
+.active .question-text {
+  display: block;
+  opacity: 1;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 0.8rem;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+.active .question-title {
+  font-weight: 700;
+  color: hsl(238deg, 29%, 16%);
+  padding-bottom: 0.4rem;
+}
+
+.active .arrow-down-icon {
+  rotate: 180deg;
 }/*# sourceMappingURL=style.css.map */
