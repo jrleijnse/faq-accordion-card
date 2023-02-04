@@ -130,7 +130,7 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   max-height: 0;
   overflow: hidden;
-  transition: ease-in 0.2s;
+  transition: ease-out 0.2s;
 }
 
 /* -------------------- FOOTER ------------------ */
@@ -150,9 +150,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .active .question-text {
   display: block;
   opacity: 1;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin-bottom: 0.8rem;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
