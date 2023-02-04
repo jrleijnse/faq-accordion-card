@@ -73,10 +73,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 
   .background-pattern-image {
-    width: 53rem;
-    top: -57%;
-    left: -120%;
+    top: 50%;
     position: absolute;
+    width: 53rem;
+    transform: translate(-59%, -58%);
   }
 
   .hero-image {
@@ -87,10 +87,10 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   .orange-box-image {
-    width: 10rem;
     top: 50%;
-    transform: translate(-49%, -40%);
     position: fixed;
+    width: 10rem;
+    transform: translate(-49%, -40%);
   }
 }
 
