@@ -58,40 +58,39 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* -------------------- GRID CONTAINER ------------------ */
-
 .grid-container {
+  position: relative;
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 52rem;
   border-radius: 1.5rem;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
-}
 
+  .orange-box-image {
+    width: 11rem;
+    top: 41%;
+    left: -10.5%;
+    position: absolute;
+  }
+}
 /* -------------------- IMAGE CONTAINER ------------------ */
 .hero-container {
+  display: flex;
+  align-items: center;
   position: relative;
   overflow: hidden;
 
   .background-pattern-image {
     top: 50%;
     position: absolute;
-    width: 52.5rem;
+    width: 52.8rem;
     transform: translate(-59%, -58%);
   }
-
   .hero-image {
-    top: 50%;
+    width: 26.4rem;
     position: absolute;
-    width: 26rem;
-    transform: translate(-17%, -50%);
-  }
-
-  .orange-box-image {
-    top: 50%;
-    position: fixed;
-    width: 11rem;
-    transform: translate(-49%, -43%);
+    left: -18%;
   }
 }
 
