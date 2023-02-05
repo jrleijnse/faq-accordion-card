@@ -1,20 +1,15 @@
 @media (max-width: 375px) {
-  body {
-    font-size: 0.8rem;
-  }
-
   .grid-container {
-    font-size: 0.5rem;
     grid-template-columns: 1fr;
     grid-template-rows: 7.3rem auto;
-    width: 20.5rem;
+    width: 19rem;
     margin-top: 9rem;
 
     .orange-box-image {
       width: 6rem;
       top: 0%;
       position: absolute;
-      transform: translate(75%, -40%);
+      transform: translate(95%, -43%);
     }
   }
 
@@ -40,14 +35,18 @@
 
   .accordion-container {
     padding: 1.4rem 1.4rem 3rem 1.4rem;
-  }
 
-  .accordion-title {
-    text-align: center;
-  }
+    .accordion-title {
+      text-align: center;
+    }
 
-  .question-text {
-    font-size: 0.8rem;
+    .question-title {
+      font-size: 0.77rem;
+    }
+
+    .question-text {
+      font-size: 0.7rem;
+    }
   }
 
   /* -------------------- FOOTERR ------------------ */
