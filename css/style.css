@@ -114,7 +114,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .question .question-title:hover {
   cursor: pointer;
   color: hsl(14deg, 88%, 65%);
-  transition: all 0.2s;
+  transition: all 0.225s;
 }
 .question .btn {
   border: none;
@@ -125,12 +125,9 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s;
 }
 .question .question-text {
-  margin-bottom: 0.5rem;
-  opacity: 0;
-  margin: 0;
   max-height: 0;
   overflow: hidden;
-  transition: ease-out 0.225s;
+  transition: all 0.225s ease-in-out;
 }
 
 /* -------------------- FOOTER ------------------ */
@@ -148,21 +145,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- ACTIVE STATE ------------------ */
 .active .question-text {
-  display: block;
-  opacity: 1;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   margin-bottom: 0.8rem;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  max-height: 3.4rem;
+  transition: all 0.225s ease-in-out;
 }
 
 .active .question-title {
   font-weight: 700;
   color: hsl(238deg, 29%, 16%);
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.8rem;
 }
 
 .active .arrow-down-icon {
