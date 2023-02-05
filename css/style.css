@@ -110,6 +110,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .question .question-title {
   font-size: 0.88rem;
   padding: 0.8rem 0;
+  line-height: 1;
 }
 .question .question-title:hover {
   cursor: pointer;
@@ -145,15 +146,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- ACTIVE STATE ------------------ */
 .active .question-text {
-  margin-bottom: 0.8rem;
-  max-height: 3.4rem;
+  padding-bottom: 0.8rem;
+  max-height: 4.2rem;
   transition: all 0.225s ease-in-out;
 }
 
 .active .question-title {
   font-weight: 700;
   color: hsl(238deg, 29%, 16%);
-  padding-bottom: 0.8rem;
 }
 
 .active .arrow-down-icon {
