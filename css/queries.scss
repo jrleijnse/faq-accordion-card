@@ -4,9 +4,9 @@
   }
   .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 7.3rem auto;
+    grid-template-rows: 7.6rem auto;
     width: 19rem;
-    margin-top: 9rem;
+    margin-top: 7rem;
 
     .orange-box-image {
       width: 6rem;
@@ -44,6 +44,7 @@
 
     .accordion-title {
       text-align: center;
+      padding-bottom: 2.2rem;
     }
 
     .question-title {
