@@ -21,6 +21,9 @@
   .hero-container {
     overflow: visible;
     .background-pattern-image {
+      display: none;
+    }
+    .background-pattern-image-mobile {
       top: 50%;
       left: 50%;
       position: absolute;
